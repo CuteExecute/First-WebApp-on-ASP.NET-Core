@@ -1,0 +1,27 @@
+﻿@*@using SuperTesting.Data.Models
+@model List<TipsNotification>*@
+
+<link href="~/css/Style.css" rel="stylesheet" type="text/css" />
+
+<main role="main" class="container posTip">
+    <div id="tipControl" class="jumbotron" style="background-color: #1b1b1b;
+        color: #ffffff;
+        border: 4px solid #00b100
+    ">
+        <h1>Tips</h1>
+        <h3>@Model[ViewBag.rnd].tip_categry</h3>
+        <p class="lead">@Model[ViewBag.rnd].tip</p>
+        <p class="lead" style="color: #00b100">{ refresh the page to get random tip }</p>
+        @*<a class="btn btn-lg btn-warning" href="/docs/4.5/components/navbar/" role="button">Обновить [Нет блин, оставить как есть...] »</a>*@
+    </div>
+</main>
+
+@section ActiveMenu {
+    <li class="nav-item active">
+        <a class="nav-link" href="/Tips/Tips">Компьютерная грамотность</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/Cats/List">Неко котики<span class="sr-only">(current)</span></a>
+    </li>
+}
+

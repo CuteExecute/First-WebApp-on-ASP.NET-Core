@@ -1,0 +1,44 @@
+﻿#colortext {
+    position: relative;
+    color: #fff;
+    z-index: 100;
+}
+
+.posBackground {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.posSlide {
+    margin-top: 4%;
+}
+
+.posTip {
+    margin-top: 20%;
+}
+
+.main_img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    /* дополнительно их выровняем по центру */
+    margin-left: auto;
+    margin-right: auto;
+    /* и добавим внешний нижний отступ */
+    margin-bottom: 15px;
+}
+
+#q {
+    position: relative;
+    z-index: -100;
+}
+
+#tipControl {
+    border: 4px solid #28a745; /* Параметры границы */
+    background: #28a745; /* Цвет фона */
+    /*padding: 10px;*/
+}
